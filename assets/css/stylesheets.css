@@ -1,0 +1,157 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+ body {
+    background-image:  url(../images/stains.png);
+    line-height: 1.7em;
+   }
+  
+   * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    font-family: 'Finger Paint';
+    color: rgb(51, 26, 0);
+  }
+  
+  h2, h3 {
+    font-weight: 600;
+    font-family: 'Finger Paint';
+    text-align: center;
+    color: rgb(51, 26, 0)
+  }
+  
+  h4 {
+    font-weight: 600;
+    text-align: center;
+    color: rgb(51, 26, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  p {
+    line-height: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: rgb(105, 81, 55);
+  }
+  
+  .display-4 {
+    color: rgb(243, 221, 198);
+    text-shadow: 3px 3px rgb(51, 26, 0);
+  }
+  
+  .container {
+    border: 15px;
+    padding: 50px;
+    margin: 20px;
+  }
+  
+  .card-body {
+    background-color: transparent;
+  }
+  
+  #img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+  }
+  #img2 {
+    border-radius: 20%;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jumbotron-3 {
+    background: url(../images/coffee7.png) no-repeat fixed;
+    background-size: cover;
+    font-family: 'Finger Paint';
+    height: 400px;
+    width: 100%;
+  }
+  .jumbotron-1 {
+    background: url(../images/CoffeePlantBean.png) no-repeat fixed;
+    background-size: cover;
+    font-family: 'Finger Paint';
+    height: 400px;
+    width: 100%;
+  }
+  
+  .jumbotron-2 {
+    background: url(../images/coffeeBag.png) no-repeat fixed;
+    background-size: cover;
+    font-family: 'Finger Paint';
+    height: 400px;
+    width: 100%;
+  }
+  
+  footer {
+    background: transparent;
+    bottom: 0;
+    width: 100%;
+    color: rgb(68, 47, 25);
+    text-align: center;
+  }
+  
+  .list-group {
+    margin: 40px;
+    border: 10px;
+    padding: 40px;
+  }
+  
+  
+  ul{ 
+    list-style-type: none;
+    margin: 20px;
+    border: 10px;
+    padding: 10px;
+    background-color: transparent;
+  }
+  
+  
+  li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  li a:hover{
+    color: rgb(51, 26, 0);
+  }
+  
+  
+  /*
+  * -- TABLET MEDIA QUERIES --
+  * On tablets, we want to slightly adjust the size of the banner
+  * text and add some vertical space between the various pricing tables
+  */
+  @media(min-width: 767px) {
+  
+    .jumbotron-1, .jumbotron-3, .jumbotron-2 {
+        font-size: 4em;
+    }
+  }
+  
+  /*
+  * -- PHONE MEDIA QUERIES --
+  * On phones, we want to reduce the height and font-size of the banner further
+  */
+  @media (min-width: 480px) {
+    .jumbotron-1, .jumbotron-2, .jumbotron-3 {
+        height: 400px;
+    }
+  
+  }
+  
+  
